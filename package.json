@@ -2,8 +2,26 @@
   "name": "ai-team-framework",
   "version": "0.1.0",
   "description": "Documentation-driven AI agent team framework for generating software projects.",
+  "author": "hiwjdgh",
   "license": "MIT",
   "type": "module",
+  "keywords": [
+    "ai",
+    "agent",
+    "cli",
+    "generator",
+    "nextjs",
+    "tailwindcss",
+    "project-scaffolding"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiwjdgh/ai-team-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hiwjdgh/ai-team-framework/issues"
+  },
+  "homepage": "https://github.com/hiwjdgh/ai-team-framework#readme",
   "bin": {
     "ai-team-framework": "./dist/cli.js"
   },
@@ -29,4 +47,3 @@
     "typescript": "^5.5.4"
   }
 }
-

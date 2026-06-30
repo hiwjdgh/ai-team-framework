@@ -20,6 +20,7 @@ Foundation documentation and the first CLI MVP have been initialized.
 - Next.js and Tailwind CSS corporate homepage template created.
 - Open source license and contribution documents created.
 - GitHub CI, issue templates, pull request template, code of conduct, release process, and roadmap created.
+- npm package metadata configured for `https://github.com/hiwjdgh/ai-team-framework`.
 - Build, type check, generation, and npm package dry-run verified.
 
 ## Not Started

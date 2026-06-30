@@ -14,3 +14,4 @@
 - Added MIT license, contribution guide, and security policy.
 - Verified `npm run build`, `npm run check`, generated project creation, and `npm pack --dry-run`.
 - Added GitHub CI workflow, issue templates, pull request template, code of conduct, release process, and product roadmap.
+- Added npm package metadata for the GitHub repository at `https://github.com/hiwjdgh/ai-team-framework`.

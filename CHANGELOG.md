@@ -20,4 +20,5 @@
 - Code of conduct.
 - Release process documentation.
 - Product roadmap.
+- npm package metadata for repository, issues, homepage, keywords, and author.
 - MIT license, contribution guide, and security policy.
