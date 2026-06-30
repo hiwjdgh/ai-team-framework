@@ -43,6 +43,7 @@ The CLI collects project requirements, creates a structured project spec, applie
 - `docs/product/cli-mvp.md`: First CLI command and generator scope.
 - `docs/architecture/system.md`: System architecture.
 - `docs/rules/coding-style.md`: Coding rules.
+- `docs/rules/git-commit-strategy.md`: Commit, branch, and release automation strategy.
 - `docs/rules/agent-contract.md`: Shared agent behavior contract.
 - `docs/agents/README.md`: Agent team overview.
 - `docs/workflows/generation-pipeline.md`: Project generation workflow.
