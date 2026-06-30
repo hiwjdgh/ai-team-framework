@@ -23,6 +23,7 @@ Foundation documentation and the first CLI MVP have been initialized.
 - GitHub CI, issue templates, pull request template, code of conduct, release process, and roadmap created.
 - npm package metadata configured for `https://github.com/hiwjdgh/ai-team-framework`.
 - Git commit strategy and manual npm publish workflow added.
+- Safe `update` command design documented.
 - Build, type check, generation, and npm package dry-run verified.
 
 ## Not Started
@@ -37,5 +38,5 @@ Foundation documentation and the first CLI MVP have been initialized.
 
 1. Add schema validation for project specifications.
 2. Add automated tests for generator output.
-3. Define safe update behavior for `.ai-team/core/` without overwriting `.ai-team/user/`.
+3. Implement `update --dry-run` using `.ai-team/manifest.json`.
 4. Add automated release publishing workflow after first manual npm release.

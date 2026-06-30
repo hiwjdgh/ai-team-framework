@@ -18,3 +18,4 @@
 - Split generated `.ai-team` metadata into framework-managed `core/` files and protected user extension files.
 - Added Git commit strategy documentation and a manual GitHub Actions npm publish workflow.
 - Fixed npm publish workflow YAML parsing for the release commit message.
+- Added safe `update` command design covering core/user metadata preservation.

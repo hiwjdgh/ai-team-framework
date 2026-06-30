@@ -25,4 +25,5 @@
 - Git commit strategy documentation.
 - Manual npm publish GitHub Actions workflow.
 - npm publish workflow YAML parsing fix.
+- Safe `update` command design for preserving `.ai-team/user/` content.
 - MIT license, contribution guide, and security policy.

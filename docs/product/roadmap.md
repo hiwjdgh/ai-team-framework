@@ -20,6 +20,8 @@ Add runtime validation for generated project specs.
 
 Define update behavior that may refresh `.ai-team/core/` guidance while preserving `.ai-team/user/` content.
 
+Design document: `docs/product/update-command.md`.
+
 ### Generator Tests
 
 Add automated tests that verify generated files, metadata, and template rendering.

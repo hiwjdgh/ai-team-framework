@@ -41,6 +41,7 @@ The CLI collects project requirements, creates a structured project spec, applie
 - `memory/current-state.md`: Current state of the project.
 - `docs/product/overview.md`: Product vision and scope.
 - `docs/product/cli-mvp.md`: First CLI command and generator scope.
+- `docs/product/update-command.md`: Safe update command design.
 - `docs/architecture/system.md`: System architecture.
 - `docs/rules/coding-style.md`: Coding rules.
 - `docs/rules/git-commit-strategy.md`: Commit, branch, and release automation strategy.
