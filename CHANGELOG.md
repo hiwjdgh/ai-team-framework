@@ -24,4 +24,5 @@
 - Generated project maintenance metadata with `.ai-team/core/` and `.ai-team/user/` separation.
 - Git commit strategy documentation.
 - Manual npm publish GitHub Actions workflow.
+- npm publish workflow YAML parsing fix.
 - MIT license, contribution guide, and security policy.

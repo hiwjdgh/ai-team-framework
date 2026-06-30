@@ -58,7 +58,8 @@ jobs:
 
       - name: Bump version
         if: ${{ inputs.dry_run == false }}
-        run: npm version ${{ inputs.version }} -m "chore: release %s"
+        run: |
+          npm version ${{ inputs.version }} -m "chore: release %s"
 
       - name: Publish dry run
         if: ${{ inputs.dry_run == true }}
@@ -75,4 +76,3 @@ jobs:
       - name: Push version commit and tag
         if: ${{ inputs.dry_run == false }}
         run: git push --follow-tags
-

@@ -17,3 +17,4 @@
 - Added npm package metadata for the GitHub repository at `https://github.com/hiwjdgh/ai-team-framework`.
 - Split generated `.ai-team` metadata into framework-managed `core/` files and protected user extension files.
 - Added Git commit strategy documentation and a manual GitHub Actions npm publish workflow.
+- Fixed npm publish workflow YAML parsing for the release commit message.
