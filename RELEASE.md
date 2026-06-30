@@ -7,7 +7,8 @@ This document defines the release checklist for publishing AI Team Framework to 
 ## Pre-Release Checklist
 
 1. Confirm the working tree only contains intended changes.
-2. Run validation:
+2. Confirm commit history follows `docs/rules/git-commit-strategy.md`.
+3. Run validation:
 
 ```bash
 npm ci
@@ -16,22 +17,25 @@ npm run check
 npm pack --dry-run
 ```
 
-3. Create a sample project:
+4. Create a sample project:
 
 ```bash
 node dist/cli.js create corporate-homepage generated/release-check --company "Release Check" --yes
 ```
 
-4. Confirm generated project files include:
+5. Confirm generated project files include:
 
 - `package.json`
 - `app/`
 - `components/`
 - `tailwind.config.ts`
 - `postcss.config.mjs`
-- `.ai-team/project-spec.json`
+- `.ai-team/manifest.json`
+- `.ai-team/core/project-spec.json`
+- `.ai-team/core/maintenance.md`
+- `.ai-team/user/notes.md`
 
-5. Update:
+6. Update:
 
 - `CHANGELOG.md`
 - `HISTORY.md`
@@ -57,6 +61,32 @@ npm publish --dry-run
 npm publish --access public
 ```
 
+## GitHub Actions Publish
+
+The repository includes a manual publish workflow:
+
+```text
+Actions -> Publish to npm -> Run workflow
+```
+
+Inputs:
+
+- `version`: `patch`, `minor`, or `major`
+- `dry_run`: `true` for validation only, `false` for real publish
+
+Required repository secret:
+
+```text
+NPM_TOKEN
+```
+
+Recommended flow:
+
+1. Run with `dry_run: true`.
+2. Confirm the workflow passes.
+3. Run with `dry_run: false`.
+4. Verify npm package installation with `npx`.
+
 ## Post-Release Verification
 
 After npm publish, verify the package from a clean directory:
@@ -81,3 +111,6 @@ Use semantic versioning:
 - Minor: new generators or backward-compatible CLI features.
 - Major: breaking CLI or generator contract changes.
 
+## Commit Strategy
+
+Use Conventional Commits. See `docs/rules/git-commit-strategy.md`.

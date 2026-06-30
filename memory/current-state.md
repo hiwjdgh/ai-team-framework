@@ -18,9 +18,11 @@ Foundation documentation and the first CLI MVP have been initialized.
 - TypeScript CLI package skeleton created.
 - Corporate homepage generator created.
 - Next.js and Tailwind CSS corporate homepage template created.
+- Generated project `.ai-team` metadata split into framework-managed `core/` and protected `user/` areas.
 - Open source license and contribution documents created.
 - GitHub CI, issue templates, pull request template, code of conduct, release process, and roadmap created.
 - npm package metadata configured for `https://github.com/hiwjdgh/ai-team-framework`.
+- Git commit strategy and manual npm publish workflow added.
 - Build, type check, generation, and npm package dry-run verified.
 
 ## Not Started
@@ -35,5 +37,5 @@ Foundation documentation and the first CLI MVP have been initialized.
 
 1. Add schema validation for project specifications.
 2. Add automated tests for generator output.
-3. Add automated release publishing workflow after first manual npm release.
-4. Prepare package metadata for public npm discovery.
+3. Define safe update behavior for `.ai-team/core/` without overwriting `.ai-team/user/`.
+4. Add automated release publishing workflow after first manual npm release.

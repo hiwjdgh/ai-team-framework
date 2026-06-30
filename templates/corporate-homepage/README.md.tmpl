@@ -27,4 +27,21 @@ Open `http://localhost:3000`.
 
 ## Generated Context
 
-Generation metadata is stored in `.ai-team/`.
+Generation metadata and maintenance guidance are stored in `.ai-team/`.
+
+- `.ai-team/core/`: framework-managed guidance.
+- `.ai-team/user/`: project-specific notes and overrides.
+- `.ai-team/manifest.json`: generator and update metadata.
+
+Write custom project context in `.ai-team/user/`. Future framework updates must not overwrite that directory.
+
+## Where To Edit
+
+- Company info: `lib/site-config.ts`
+- Homepage: `app/page.tsx`
+- About page: `app/about/page.tsx`
+- Services page: `app/services/page.tsx`
+- Contact page: `app/contact/page.tsx`
+- Header: `components/site-header.tsx`
+- Footer: `components/site-footer.tsx`
+- Theme: `tailwind.config.ts`

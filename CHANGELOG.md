@@ -21,4 +21,7 @@
 - Release process documentation.
 - Product roadmap.
 - npm package metadata for repository, issues, homepage, keywords, and author.
+- Generated project maintenance metadata with `.ai-team/core/` and `.ai-team/user/` separation.
+- Git commit strategy documentation.
+- Manual npm publish GitHub Actions workflow.
 - MIT license, contribution guide, and security policy.

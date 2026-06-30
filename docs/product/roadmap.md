@@ -7,7 +7,7 @@ The current MVP provides:
 - TypeScript CLI skeleton
 - `create corporate-homepage` command
 - Next.js and Tailwind CSS corporate homepage template
-- Generated `.ai-team` metadata
+- Generated `.ai-team` metadata with framework-managed `core/` guidance and protected `user/` extensions
 - Agent documentation foundation
 
 ## Near Term
@@ -15,6 +15,10 @@ The current MVP provides:
 ### Project Specification Validation
 
 Add runtime validation for generated project specs.
+
+### Safe Update Policy
+
+Define update behavior that may refresh `.ai-team/core/` guidance while preserving `.ai-team/user/` content.
 
 ### Generator Tests
 
@@ -61,4 +65,3 @@ Support community-maintained templates and generator packages.
 ### Quality Automation
 
 Add generated project linting, formatting, tests, and visual checks where applicable.
-

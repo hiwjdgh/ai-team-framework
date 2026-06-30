@@ -27,7 +27,30 @@ The first generator creates a Next.js and Tailwind CSS corporate homepage with:
 - Shared layout
 - Shared navigation and footer
 - Tailwind CSS configuration
-- Generated project metadata in `.ai-team/`
+- Generated project metadata and maintenance guidance in `.ai-team/`
+
+## Generated AI Team Structure
+
+```text
+.ai-team/
+  README.md
+  manifest.json
+  core/
+    project-spec.json
+    agent-plan.md
+    architecture.md
+    maintenance.md
+    decisions.md
+    change-guide.md
+    prompts.md
+  user/
+    notes.md
+    decisions.md
+    maintenance.md
+    prompts.md
+```
+
+The `core/` directory is framework-managed. The `user/` directory is protected for user-authored extensions and must not be overwritten by future update commands.
 
 ## Current Options
 
