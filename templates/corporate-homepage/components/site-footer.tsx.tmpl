@@ -1,0 +1,15 @@
+import { siteConfig } from "@/lib/site-config";
+
+export function SiteFooter() {
+  return (
+    <footer className="border-t border-line px-6 py-9 text-muted">
+      <div className="mx-auto flex max-w-shell flex-col justify-between gap-6 md:flex-row">
+        <div>
+          <strong>{siteConfig.companyName}</strong>
+          <p className="leading-7">{siteConfig.industry}</p>
+        </div>
+        <p className="leading-7">(c) 2026 {siteConfig.companyName}. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+}

@@ -1,0 +1,32 @@
+{
+  "name": "ai-team-framework",
+  "version": "0.1.0",
+  "description": "Documentation-driven AI agent team framework for generating software projects.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ai-team-framework": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "docs",
+    "memory",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/cli.js",
+    "create:demo": "node dist/cli.js create corporate-homepage demo-company-site --yes"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.4"
+  }
+}
+

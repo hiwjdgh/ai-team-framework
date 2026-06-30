@@ -1,0 +1,24 @@
+import { siteConfig } from "@/lib/site-config";
+
+export default function AboutPage() {
+  return (
+    <section className="px-6 py-16 md:py-20">
+      <div className="mx-auto grid max-w-shell gap-12 md:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <p className="mb-4 text-sm font-bold uppercase text-gold">About</p>
+          <h1 className="text-5xl font-extrabold leading-none md:text-7xl">{siteConfig.companyName}</h1>
+        </div>
+        <div>
+          <p className="text-xl leading-8 text-muted">
+            We are a {siteConfig.industry.toLowerCase()} company focused on clear
+            decisions, practical delivery, and durable client relationships.
+          </p>
+          <p className="mt-5 leading-7 text-muted">
+            This page is intentionally structured as a strong starting point. Replace this
+            content with company history, leadership, operating principles, and proof points.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,35 @@
+const serviceItems = [
+  {
+    title: "Advisory",
+    description: "Clarify priorities, risks, and the operating model required to move forward."
+  },
+  {
+    title: "Implementation",
+    description: "Translate plans into working systems, processes, and customer-facing output."
+  },
+  {
+    title: "Optimization",
+    description: "Improve what already exists through focused measurement and iteration."
+  }
+];
+
+export default function ServicesPage() {
+  return (
+    <section className="px-6 py-16 md:py-20">
+      <div className="mx-auto max-w-shell">
+        <p className="mb-4 text-sm font-bold uppercase text-gold">Services</p>
+        <h1 className="mb-8 text-5xl font-extrabold leading-none md:text-7xl">
+          Services built for practical progress.
+        </h1>
+        <div className="grid gap-5 md:grid-cols-3">
+          {serviceItems.map((item) => (
+            <article className="rounded-lg border border-line bg-panel p-6" key={item.title}>
+              <h3 className="mb-3 text-xl font-bold">{item.title}</h3>
+              <p className="leading-7 text-muted">{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,91 @@
+import Link from "next/link";
+import { siteConfig } from "@/lib/site-config";
+
+const services = [
+  "Strategy and planning",
+  "Operational execution",
+  "Long-term support"
+];
+
+export default function HomePage() {
+  return (
+    <>
+      <section
+        className="grid min-h-[calc(100vh-68px)] items-center border-b border-line bg-cover bg-center text-white"
+        style={{
+          backgroundImage:
+            "linear-gradient(120deg, rgb(19 72 63 / 88%), rgb(23 32 26 / 74%)), url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80')"
+        }}
+      >
+        <div className="mx-auto w-full max-w-shell px-6 py-20 md:py-24">
+          <div className="max-w-3xl">
+            <p className="mb-4 text-sm font-bold uppercase text-[#f2c46d]">{siteConfig.industry}</p>
+            <h1 className="mb-6 text-5xl font-extrabold leading-none md:text-7xl lg:text-8xl">
+              {siteConfig.companyName}
+            </h1>
+            <p className="text-xl leading-8 text-white/85">{siteConfig.tagline}</p>
+          </div>
+          <div className="mt-9 flex flex-wrap gap-3">
+            <Link className="inline-flex min-h-12 items-center justify-center rounded-md bg-gold px-5 font-bold text-[#1a1206]" href="/contact">
+              Start a conversation
+            </Link>
+            <Link className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/40 px-5 font-bold text-white" href="/services">
+              View services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-16 md:py-20">
+        <div className="mx-auto grid max-w-shell gap-12 md:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="mb-4 text-sm font-bold uppercase text-gold">What we do</p>
+            <h2 className="text-4xl font-extrabold leading-tight md:text-5xl">
+              Reliable business outcomes with a practical operating rhythm.
+            </h2>
+          </div>
+          <div>
+            <p className="text-xl leading-8 text-muted">
+              {siteConfig.companyName} helps teams turn complex priorities into clear plans,
+              measurable work, and sustainable systems.
+            </p>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              <div className="border-l-4 border-accent pl-4">
+                <strong className="block text-3xl">01</strong>
+                <span>Clear scope</span>
+              </div>
+              <div className="border-l-4 border-accent pl-4">
+                <strong className="block text-3xl">02</strong>
+                <span>Focused delivery</span>
+              </div>
+              <div className="border-l-4 border-accent pl-4">
+                <strong className="block text-3xl">03</strong>
+                <span>Measured results</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-16 md:py-20">
+        <div className="mx-auto max-w-shell">
+          <p className="mb-4 text-sm font-bold uppercase text-gold">Services</p>
+          <h2 className="mb-8 text-4xl font-extrabold leading-tight md:text-5xl">
+            Support across the work that matters.
+          </h2>
+          <div className="grid gap-5 md:grid-cols-3">
+            {services.map((service) => (
+              <article className="rounded-lg border border-line bg-panel p-6" key={service}>
+                <h3 className="mb-3 text-xl font-bold">{service}</h3>
+                <p className="leading-7 text-muted">
+                  Structured support designed for teams that need clarity, momentum, and
+                  accountable execution.
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
